@@ -1,6 +1,8 @@
 package com.krishina.acertougame;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -12,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private ListView listViewCategorias;
     private ArrayAdapter adapter;
     private List<String> listaCategorias;
@@ -31,5 +33,10 @@ public class MainActivity extends AppCompatActivity {
     private void preencherAdapter() {
         listaCategorias = Categorias.listarCategorias();
         adapter = new ArrayAdapter(MainActivity.this, android.R.layout.simple_list_item_1,listaCategorias);
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        
     }
 }
