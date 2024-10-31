@@ -16,8 +16,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private ListView listViewCategorias;
-    private ArrayAdapter adapter;
-    private List<String> listaCategorias;
+    private MeuAdapter adapter;
+    //private ArrayAdapter adapter;
+    private List<ItemLista> listaCategorias;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     private void preencherAdapter() {
         listaCategorias = Categorias.listarCategorias();
-        adapter = new ArrayAdapter(MainActivity.this, android.R.layout.simple_list_item_1,listaCategorias);
+        adapter = new MeuAdapter(MainActivity.this,listaCategorias);
     }
 
     @Override

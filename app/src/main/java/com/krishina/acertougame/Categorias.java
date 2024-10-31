@@ -5,17 +5,19 @@ import java.util.List;
 
 public class Categorias {
 
-    public static List<String> listarCategorias(){
+    public static List<ItemLista> listarCategorias(){
 
-        List<ItemLista>itens = new ArrayList<>();
-        ItemLista categoriaEsporte = new ItemLista(R.drawable.skate,"esporte");
-        itens.add(categoriaEsporte);
+        List<ItemLista>categorias = new ArrayList<>();
 
+        ItemLista categoriaEsporte = new ItemLista(R.drawable.skate,"ESPORTE");
+        categorias.add(categoriaEsporte);
 
-        List <String> listaCategorias = new ArrayList<>();
-        listaCategorias.add("Filme");
-        listaCategorias.add("Tecnologia");
-        listaCategorias.add("Esporte");
-        return listaCategorias;
+        ItemLista categoriaTecnologia = new ItemLista(R.drawable.transformacao,"TECNOLOGIA");
+        categorias.add(categoriaTecnologia);
+
+        ItemLista categoriaFilme = new ItemLista(R.drawable.pipoca,"FILME");
+        categorias.add(categoriaFilme);
+
+        return categorias;
     }
 }
