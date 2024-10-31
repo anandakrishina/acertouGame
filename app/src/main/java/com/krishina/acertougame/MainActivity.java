@@ -28,16 +28,18 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         listViewCategorias = findViewById(R.id.listaCategorias);
         preencherAdapter();
-        listViewCategorias.setAdapter(adapter);
     }
 
     private void preencherAdapter() {
         listaCategorias = Categorias.listarCategorias();
         adapter = new MeuAdapter(MainActivity.this,listaCategorias);
+        listViewCategorias.setAdapter(adapter);
     }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        
+
+
+
     }
 }
