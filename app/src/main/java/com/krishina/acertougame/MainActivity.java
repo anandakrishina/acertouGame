@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
 
-
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int positon, long id) {
         ItemLista categoria = (ItemLista) adapterView.getItemAtPosition(positon);
