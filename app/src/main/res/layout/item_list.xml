@@ -24,6 +24,7 @@
             android:layout_marginLeft="10dp"
             android:gravity="center_vertical"
             android:textStyle="bold"
+            android:textColor="@color/black"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:text="Categoria"/>
     </LinearLayout>

@@ -20,7 +20,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private ListView listViewCategorias;
     private MeuAdapter adapter;
-    //private ArrayAdapter adapter;
     private List<ItemLista> listaCategorias;
 
     @Override
@@ -29,6 +28,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         EdgeToEdge.enable(this);
 
         setContentView(R.layout.activity_main);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+
         listViewCategorias = findViewById(R.id.listaCategorias);
         preencherAdapter();
     }
@@ -39,7 +44,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         listViewCategorias.setAdapter(adapter);
         listViewCategorias.setOnItemClickListener(this);
     }
-
 
 
     @Override

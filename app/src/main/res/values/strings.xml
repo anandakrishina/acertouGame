@@ -1,3 +1,105 @@
 <resources>
     <string name="app_name">AcertouGame</string>
+    <string name="filme">FILME</string>
+    <string name="tecnologia">TECNOLOGIA</string>
+    <string name="acertou_game">ACERTOU GAME</string>
+
+    <string-array name="perguntasTecnologia">
+        <item>Qual empresa desenvolveu o sistema operacional Android?</item>
+        <item>Em que ano foi lançado o primeiro modelo do iPhone?</item>
+        <item>Quem é considerado o fundador da Microsoft?</item>
+    </string-array>
+
+    <string-array name="opcao0Tecnologia">
+        <item>A) Google</item>
+        <item>B) Apple</item>
+        <item>C) Microsoft</item>
+        <item>D) IBM</item>
+    </string-array>
+
+    <string-array name="opcao1Tecnologia">
+        <item>A) 2005</item>
+        <item>B) 2007</item>
+        <item>C) 2010</item>
+        <item>D) 2012</item>
+    </string-array>
+
+    <string-array name="opcao2Tecnologia">
+        <item>A) Steve Jobs</item>
+        <item>B) Bill Gates</item>
+        <item>C) Mark Zuckerberg</item>
+        <item>D) Jeff Bezos</item>
+    </string-array>
+
+    <integer-array name="respostasCorretasTecnologia">
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+
+    <string-array name="perguntasFilme">
+        <item>Qual é o nome do ator que interpreta Harry Potter nos filmes da franquia?</item>
+        <item>Em que ano foi lançado o primeiro filme da trilogia "O Poderoso Chefão"?</item>
+        <item>Quem dirigiu a trilogia de filmes "O Senhor dos Anéis"?</item>
+    </string-array>
+
+    <string-array name="opcao0Filme">
+        <item>A) Daniel Radcliffe</item>
+        <item>B) Elijah Wood</item>
+        <item>C) Rupert Grint</item>
+        <item>D) Tom Felton</item>
+    </string-array>
+
+    <string-array name="opcao1Filme">
+        <item>A) 1969</item>
+        <item>B) 1972</item>
+        <item>C) 1974</item>
+        <item>D) 1979</item>
+    </string-array>
+
+    <string-array name="opcao2Filme">
+        <item>A) Steven Spielberg</item>
+        <item>B) Peter Jackson</item>
+        <item>C) George Lucas</item>
+        <item>D) James Cameron</item>
+    </string-array>
+
+    <integer-array name="respostasCorretasFilme">
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+
+    <string-array name="perguntasEsporte">
+        <item>Quem é a jogadora de futebol brasileira conhecida como "Rainha" e seis vezes eleita a melhor do mundo?</item>
+        <item>Em qual ano a seleção feminina de vôlei do Brasil conquistou sua primeira medalha de ouro nas Olimpíadas?</item>
+        <item>Quantas vezes a tenista Serena Williams venceu o torneio de Wimbledon em simples?</item>
+    </string-array>
+
+    <string-array name="opcao0Esporte">
+        <item>A) Formiga</item>
+        <item>B) Marta</item>
+        <item>C) Cristiane</item>
+        <item>D) Sissi</item>
+    </string-array>
+
+    <string-array name="opcao1Esporte">
+        <item>A) 2004</item>
+        <item>B) 2016</item>
+        <item>C) 2012</item>
+        <item>D) 2008</item>
+    </string-array>
+
+    <string-array name="opcao2Esporte">
+        <item>A) 5</item>
+        <item>B) 7</item>
+        <item>C) 6</item>
+        <item>D) 8</item>
+    </string-array>
+
+    <integer-array name="respostasCorretasEsporte">
+        <item>1</item>
+        <item>3</item>
+        <item>1</item>
+    </integer-array>
 </resources>

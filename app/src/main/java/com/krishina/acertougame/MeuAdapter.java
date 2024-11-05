@@ -23,7 +23,6 @@ public class MeuAdapter extends BaseAdapter {
 
 
     //Retorna o número total de itens no Adapter.
-    // Esse valor é usado para determinar quantas vezes o método getView() será chamado.
     @Override
     public int getCount() {
         return categorias.size();
@@ -31,7 +30,6 @@ public class MeuAdapter extends BaseAdapter {
 
 
     //Retorna o objeto de dados na posição especificada.
-    // Esse método é útil quando você precisa acessar o item de uma posição específica.
     @Override
     public ItemLista getItem(int position) {
         return categorias.get(position);
@@ -39,8 +37,6 @@ public class MeuAdapter extends BaseAdapter {
 
 
     //Retorna o ID associado à posição específica no Adapter.
-    // Em muitos casos, isso pode ser apenas a própria posição,
-    // mas se cada item tiver um ID exclusivo, você pode retornar esse ID.
     @Override
     public long getItemId(int position) {
         return position;
