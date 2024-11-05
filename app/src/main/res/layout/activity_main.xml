@@ -4,39 +4,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@color/white"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        android:background="@color/green"
-        android:gravity="center">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/perguntas_e_respostas"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/acertou_game"
-            android:textStyle="bold"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:layout_marginStart="30dp"/>
-    </LinearLayout>
 
 
     <ListView
         android:id="@+id/listaCategorias"
-        android:padding="10dp"
+        android:layout_margin="10dp"
         android:background="@color/greenBg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
